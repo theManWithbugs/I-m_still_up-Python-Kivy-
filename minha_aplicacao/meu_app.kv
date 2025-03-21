@@ -1,0 +1,32 @@
+# <Tela1>:
+#     FloatLayout:
+#         Label:
+#             text: "Digite algo abaixo:"
+#             size_hint: (1, 0.1)
+#             pos_hint: {"center_x": 0.5, "center_y": 0.6}
+#             color: (0, 1, 1)  # Cor preta
+
+#         TextInput:
+#             hint_text: "Escreva aqui..."
+#             multiline: False
+#             size_hint: (0.8, 0.1)
+#             pos_hint: {"center_x": 0.5, "center_y": 0.4}
+
+#         Button:
+#             text: "Ir para Tela 2"
+#             size_hint: (0.3, 0.1)
+#             pos_hint: {"center_x": 0.5, "center_y": 0.2}
+#             on_press: app.root.current = 'tela2'
+
+# <Tela2>:
+#     FloatLayout:
+#         Label:
+#             text: "Bem-vindo à Tela 2!"
+#             size_hint: (1, 0.1)
+#             pos_hint: {"center_x": 0.5, "center_y": 0.6}
+
+#         Button:
+#             text: "Voltar para Tela 1"
+#             size_hint: (0.3, 0.1)
+#             pos_hint: {"center_x": 0.5, "center_y": 0.2}
+#             on_press: app.root.current = 'tela1'
